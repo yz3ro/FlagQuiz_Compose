@@ -19,5 +19,5 @@ interface CountryDao {
     suspend fun getRandomCountry(): Country?
 
     @Query("SELECT * FROM flags WHERE flag_name != :selectedCountryName ORDER BY RANDOM() LIMIT 3")
-    suspend fun getRandomThreeCountryName(selectedCountryName: String) : Country?
+    suspend fun getRandomThreeCountryName(selectedCountryName: String) :List<Country>
 }

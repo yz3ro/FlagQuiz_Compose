@@ -91,5 +91,11 @@ dependencies {
     implementation ("androidx.hilt:hilt-navigation-compose:1.2.0")
     //timber
     implementation ("com.jakewharton.timber:timber:5.0.1")
+    //Preferences DataStore
+    implementation("androidx.datastore:datastore-preferences:1.1.1")
+    // Lifecycle component & Kotlin coroutines components
+    implementation ("androidx.lifecycle:lifecycle-livedata-ktx:2.8.0")
+    api ("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.3")
+    api ("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3")
 
 }

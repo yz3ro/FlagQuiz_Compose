@@ -13,7 +13,7 @@ class QuizRepository @Inject constructor(
         return countryDao.getRandomCountry()
     }
 
-    suspend fun getRandomCountryName(selectedCountryName: String) : Country?{
+    suspend fun getRandomCountryName(selectedCountryName: String) : List<Country>{
         return countryDao.getRandomThreeCountryName(selectedCountryName)
     }
 }

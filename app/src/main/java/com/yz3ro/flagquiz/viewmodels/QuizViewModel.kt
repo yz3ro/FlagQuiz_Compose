@@ -1,4 +1,4 @@
-package com.yz3ro.flagquiz
+package com.yz3ro.flagquiz.viewmodels
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
@@ -24,12 +24,12 @@ class QuizViewModel @Inject constructor(
         }
     }
 
-    private val _randomCountryName = MutableLiveData<Country?>()
-    val randomCountryName: LiveData<Country?> = _randomCountryName
+    private val _randomCountryNames = MutableLiveData<List<Country>>()
+    val randomCountryNames: LiveData<List<Country>> = _randomCountryNames
 
     fun getRandomCountryName(selectedCountryName: String){
         viewModelScope.launch {
-            _randomCountryName.value = repository.getRandomCountryName(selectedCountryName)
+            _randomCountryNames.value = repository.getRandomCountryName(selectedCountryName)
         }
     }
 }

@@ -40,7 +40,7 @@ fun navHost() {
             Feed(navController)
         }
         composable("quiz_page") {
-            QuizPage()
+            QuizPage(navController)
         }
     }
 }

@@ -1,4 +1,4 @@
-package com.yz3ro.flagquiz
+package com.yz3ro.flagquiz.viewmodels
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
